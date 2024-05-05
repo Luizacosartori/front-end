@@ -1,0 +1,48 @@
+body, html{
+    padding: 0;
+    margin: 0;
+    font-family: UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.navigation {
+    padding: 10px;
+    background-color: black;
+    margin: auto;
+    display: flex;
+}
+
+.navigation a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 5px 12px;
+    margin: 10px;
+
+}
+
+.navigation a:hover {
+    background-color: grey;
+    border-radius: 15px;
+    padding: 5px 12px;
+    margin: 10px;
+}
+
+.right-side-nav {
+    position: absolute;
+    right:7%;
+}
+
+.left-side-nav {
+    margin-left: 5%;
+}
+
+#sign-up{
+    background-color: aliceblue;
+    color: black;
+    border-radius: 15px;
+}
+
+#sign-up:hover{
+    background-color: gainsboro;
+    border-radius: 15px;
+}
