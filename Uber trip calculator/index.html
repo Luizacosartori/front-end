@@ -7,9 +7,12 @@
       href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <script href="script.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <title>Calculate your trip</title>
   </head>
   <body>
@@ -23,7 +26,7 @@
         <a href="#">About</a>
       </div>
       <div class="right-side-nav">
-        <a href="#"> <i class="fa fa-solid fa-globe"></i>    EN</a>
+        <a href="#"> <i class="fa fa-solid fa-globe"></i> EN</a>
         <a href="#">Help</a>
         <a href="#">Log in</a>
         <a href="#" id="sign-up">Sign up</a>
@@ -34,12 +37,24 @@
       <div class="cost-calculator">
         <h1>How much does a ride with Uber cost?</h1>
         <p>Plan yout next trip with the price estimator.</p>
-        <input placeholder="Enter pickup location" />
-        <input placeholder="Enter destination" />
-        <button>See prices</button>
+
+        <div class="pick-up-location">
+          <i class="fa fas fa-stop-circle"></i>
+          <input placeholder="Enter pickup location" />
+          <i class="fa fa-solid fa-location-arrow arrow fa-lg"></i>
+        </div>
+
+        <div id="line"></div>
+
+        <div class="pick-up-location">
+          <i class="fa fas fa-square"></i>
+          <input placeholder="Enter destination" />
+        </div>
+        <button class="see-prices-button">See prices</button>
       </div>
+
       <div class="image">
-        <img src="assets/uber.PNG" width="500px">
+        <img src="assets/uber.PNG" width="558px" height="558px"/>
       </div>
     </div>
   </body>

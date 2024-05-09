@@ -4,10 +4,12 @@ html {
   margin: 0;
   font-family: UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial,
     sans-serif;
+  background-color: white;
 }
 
+/* Start of Navigation Menu */
 .navigation {
-  padding: 10px;
+  padding: 5px;
   background-color: black;
   margin: auto;
   display: flex;
@@ -48,17 +50,70 @@ html {
   border-radius: 15px;
 }
 
+/* End of Navigation Menu */
+
 .content {
   display: flex;
-  margin-top: 5%;
+  position: relative;
   align-items: center;
   justify-content: center;
+  margin: 64px;
 }
 
 .cost-calculator {
-width: 45%;
+  width: 45%;
 }
 
 h1 {
+  text-align: left;
   font-size: 52px;
+  font-weight: 700;
+  line-height: 64px;
+  width: 75%;
+}
+
+.image img {
+  border-bottom-left-radius: 1%;
+  border-bottom-right-radius: 1%;
+}
+
+#line {
+  position: relative;
+  height: 40px;
+  border-left: 1px solid black;
+  margin: 10px;
+  margin: -15px 10px -15px 21px;
+}
+
+.pick-up-location {
+  width: 60%;
+  padding: 15px;
+  background-color: rgb(243, 243, 243);
+  border-radius: 8px;
+}
+
+input {
+  all: unset;
+  background-color: rgb(243, 243, 243);
+}
+
+.see-prices-button {
+  all: unset;
+  padding: 12px 25px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 20px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.see-prices-button:hover{
+  background-color: grey;
+}
+
+.arrow{
+  margin-left: 145px;
 }
