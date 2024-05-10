@@ -9,7 +9,6 @@ html {
 
 /* Start of Navigation Menu */
 .navigation {
-  padding: 5px;
   background-color: black;
   margin: auto;
   display: flex;
@@ -20,36 +19,50 @@ html {
   color: white;
   text-decoration: none;
   padding: 5px 12px;
-  margin: 10px;
+  margin: 10px 0px;
+  font-size: 14px;
+  font-weight: 500;
 }
 
-.navigation a:hover {
-  background-color: grey;
+.navigation a:hover:not(:first-child) {
+  background-color: rgb(34, 34, 34);
   border-radius: 15px;
   padding: 5px 12px;
-  margin: 10px;
+  transition: background-color .3s ease;
+
 }
 
 .right-side-nav {
   position: absolute;
   right: 7%;
+  top: 1px;
 }
 
 .left-side-nav {
   margin-left: 5%;
 }
 
+.left-side-nav a:not(:first-child) {
+  margin-top: -5px;
+}
+
 #sign-up {
-  background-color: aliceblue;
+  background-color: white;
   color: black;
-  border-radius: 15px;
+  border-radius: 20px;
+  padding: 8px 15px 10px 15px;
 }
 
 #sign-up:hover {
   background-color: gainsboro;
-  border-radius: 15px;
+  border-radius: 20px;
+  transition: background-color .3s ease;
 }
 
+#uber-logo {
+  font-size: 24px;
+  font-weight: 400;
+}
 /* End of Navigation Menu */
 
 .content {
@@ -58,6 +71,7 @@ html {
   align-items: center;
   justify-content: center;
   margin: 64px;
+
 }
 
 .cost-calculator {
@@ -67,9 +81,11 @@ html {
 h1 {
   text-align: left;
   font-size: 52px;
-  font-weight: 700;
+  font-weight: 650;
   line-height: 64px;
   width: 75%;
+  margin-top: -10px;
+
 }
 
 .image img {
@@ -110,10 +126,12 @@ input {
   font-weight: 500;
 }
 
-.see-prices-button:hover{
+.see-prices-button:hover {
   background-color: grey;
+  transition: background-color .3s ease;
+
 }
 
-.arrow{
+.arrow {
   margin-left: 145px;
 }
